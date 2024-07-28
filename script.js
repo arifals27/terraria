@@ -100,7 +100,7 @@ data.forEach((item) => {
     setTimeout(() => {
       card.classList.remove("fixed");
       window.location.href = item.slug;
-    }, 5000);
+    }, 2000);
   });
   // menambahkan semua card ke cards
   cards.appendChild(card);
