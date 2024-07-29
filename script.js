@@ -77,7 +77,6 @@ data.forEach((item) => {
     card.classList.add("fixed");
 
     setTimeout(() => {
-      card.classList.remove("fixed");
       window.location.href = item.slug;
     }, 2000);
   });
