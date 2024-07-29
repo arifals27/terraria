@@ -1,0 +1,384 @@
+/* Resetting default browser styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default links styles */
+a {
+  text-decoration: none;
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default button styles */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default button styles (for IE) */
+button,
+input {
+  overflow: visible;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default form styles */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin and padding for the root element */
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin and padding for the body element */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+ol {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+/* Additional typography styles */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+}
+
+code,
+pre {
+  font-family: "Courier New", monospace;
+}
+
+code {
+  font-size: 0.85rem;
+  padding: 4px 6px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+pre {
+  white-space: pre-wrap;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+#container {
+  display: block;
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#background {
+  padding: 20px;
+  border-radius: 10px;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(5px);
+}
+#filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.3) 0%,
+    black 100%
+  );
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, black 100%);
+}
+.title {
+  position: absolute;
+  font-weight: 700;
+  font-size: 5rem;
+  left: 50%;
+  translate: -50%;
+  color: white;
+  top: 5%;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: absolute;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  bottom: 150px;
+  padding: 5% 10%;
+}
+
+.linfo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  width: 80%;
+}
+.rinfo {
+  display: none;
+  overflow-x: auto; /* Tambahkan ini */
+  white-space: nowrap; /* Tambahkan ini */
+}
+.rinfo .items {
+  display: inline-block; /* Ubah ini */
+  width: auto; /* Ubah ini */
+  white-space: nowrap; /* Tambahkan ini */
+  position: relative;
+}
+.rinfo .item {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px; /* Tambahkan margin antar item */
+}
+.rinfo .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.linfo h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.linfo h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.linfo .description {
+  margin: 20px 0;
+}
+.linfo .btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.linfo .btn:hover {
+  background-color: #007bff;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .linfo {
+    width: 100%;
+    display: block;
+  }
+  .data {
+    grid-template-columns: repeat(1, 1fr);
+    top: 100px;
+    bottom: auto;
+  }
+  .rinfo .items {
+    bottom: auto;
+    margin-top: 20px;
+  }
+}
