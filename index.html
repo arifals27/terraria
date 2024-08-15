@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
   </head>
+  <body>
     <div id="container">
       <div
         id="background"
@@ -24,28 +24,89 @@
           <h2>KAWASAN TAMAN NASIONAL</h2>
           <h1>BROMO TENGGER SEMERU</h1>
           <div class="description">
-            TERRARIA merupakan media pembelajaran virtual field trip yang ditujukan untuk menunjang pembelajaran terkait pemanfaatan dan pelestarian sumber daya alam yang dapat memberikan konten yang bersifat kontekstual, sehingga mampu meningkatkan motivasi belajar siswa. Selain itu melalui media ini tentunya dapat memberikan inovasi dalam pembelajaran IPS yang menarik dan interaktif.
+            TERRARIA merupakan media pembelajaran virtual field trip yang
+            ditujukan untuk menunjang pembelajaran terkait pemanfaatan dan
+            pelestarian sumber daya alam yang dapat memberikan konten yang
+            bersifat kontekstual, sehingga mampu meningkatkan motivasi belajar
+            siswa. Selain itu melalui media ini tentunya dapat memberikan
+            inovasi dalam pembelajaran IPS yang menarik dan interaktif.
           </div>
           <div class="butnav">
-            <a class="btn" href="/tour/bromo/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg> View Travel</a>
-            <button class="btn petunjuk" onclick="showPetunjuk()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg> Petunjuk</button>
+            <button
+              class="btn"
+              style="grid-column: span 2"
+              onclick="showCandt()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                />
+              </svg>
+              Capaian dan Tujuan
+            </button>
+            <button class="btn petunjuk" onclick="showPetunjuk()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                />
+              </svg>
+              Petunjuk
+            </button>
+            <a class="btn" href="/tour/bromo/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m9.5 16.5l7-4.5l-7-4.5zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                />
+              </svg>
+              View Travel</a
+            >
           </div>
         </div>
         <div class="rinfo owl-carousel owl-theme">
           <div class="items">
             <div class="item">
-                <img src="/assets/images/bromo.jpg" />
-              </div>
-              
+              <img src="/assets/images/bromo.jpg" />
+            </div>
           </div>
         </div>
       </div>
+      <!-- start petunjuk -->
       <div id="petunjuk">
         <div class="header">
-          <h3 class="judul">Petunjuk</h3>
-          <button class="close" onclick="closePetunjuk()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l2.9 2.9q.275.275.7.275t.7-.275t.275-.7t-.275-.7L13.4 12l2.9-2.9q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275L12 10.6L9.1 7.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l2.9 2.9l-2.9 2.9q-.275.275-.275.7t.275.7t.7.275t.7-.275zm0 8.6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg></button>
+          <h4 class="judul">Petunjuk</h4>
+          <button class="close" onclick="closePetunjuk()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 13.4l2.9 2.9q.275.275.7.275t.7-.275t.275-.7t-.275-.7L13.4 12l2.9-2.9q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275L12 10.6L9.1 7.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l2.9 2.9l-2.9 2.9q-.275.275-.275.7t.275.7t.7.275t.7-.275zm0 8.6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+              />
+            </svg>
+          </button>
         </div>
-      
+
         <div id="guides">
           <div class="guide">
             <div class="ginfo">
@@ -85,7 +146,8 @@
                 />
               </svg>
               <div class="desc">
-                Tombol restart berfungsi untuk memulai kembali media dari stopsite awal
+                Tombol restart berfungsi untuk memulai kembali media dari
+                stopsite awal
               </div>
             </div>
           </div>
@@ -104,7 +166,10 @@
                 />
               </svg>
 
-              <div class="desc">Tombol Galeri dapat diguakan untuk melihat kenampakan panorama secara detail</div>
+              <div class="desc">
+                Tombol Galeri dapat diguakan untuk melihat kenampakan panorama
+                secara detail
+              </div>
             </div>
           </div>
           <div class="guide">
@@ -121,7 +186,10 @@
                   d="m9.5 16.5l7-4.5l-7-4.5zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
                 />
               </svg>
-              <div class="desc">Tombol Play merupakan dapat digunakan untuk memutar video yang terdapat didalam media pembelajaran</div>
+              <div class="desc">
+                Tombol Play merupakan dapat digunakan untuk memutar video yang
+                terdapat didalam media pembelajaran
+              </div>
             </div>
           </div>
           <div class="guide">
@@ -140,16 +208,75 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <div class="desc">Tombol Back merupakan tombol yang dapat digunakan apabila ingin kembali tampilan media sebelumnya</div>
+              <div class="desc">
+                Tombol Back merupakan tombol yang dapat digunakan apabila ingin
+                kembali tampilan media sebelumnya
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- end petunjuk -->
+      <!-- start capaian dan tujuan -->
+      <div id="candt">
+        <div class="header">
+          <h4 class="judul">Capaian dan Tujuan</h4>
+          <button class="close" onclick="closeCandt()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 13.4l2.9 2.9q.275.275.7.275t.7-.275t.275-.7t-.275-.7L13.4 12l2.9-2.9q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275L12 10.6L9.1 7.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l2.9 2.9l-2.9 2.9q-.275.275-.275.7t.275.7t.7.275t.7-.275zm0 8.6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="content">
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Maecenas fermentum nunc sed justo rhoncus facilisis.</li>
+            <li>
+              Vestibulum aliquam enim ut tellus semper, nec mollis lorem varius.
+            </li>
+            <li>Praesent vel turpis ut libero dictum imperdiet.</li>
+            <li>
+              Aliquam imperdiet mi ut nibh suscipit, et suscipit erat faucibus.
+            </li>
+            <li>Cras ac lectus pulvinar magna pretium condimentum.</li>
+            <li>Suspendisse mattis elit ut sem dapibus venenatis.</li>
+            <li>Nulla eu magna eget mauris pulvinar dictum.</li>
+            <li>
+              Donec nec justo non elit bibendum convallis nec consequat felis.
+            </li>
+            <li>Curabitur eu eros vitae sem lacinia consequat.</li>
+            <li>Aliquam a est eget nisl venenatis faucibus.</li>
+            <li>Nunc maximus sem eget finibus malesuada.</li>
+            <li>Nulla at quam et neque facilisis posuere vel ac diam.</li>
+            <li>
+              Suspendisse eget mi mollis, feugiat tortor vitae, vestibulum
+              turpis.
+            </li>
+            <li>Nullam pulvinar nisi sit amet facilisis tristique.</li>
+            <li>Aenean consequat eros et libero tincidunt tempus.</li>
+            <li>Quisque nec mi sed magna auctor dapibus.</li>
+            <li>Quisque eleifend nisi eu congue ultricies.</li>
+            <li>Vivamus sodales est a leo placerat egestas vel eu lectus.</li>
+            <li>
+              Vestibulum nec sapien iaculis, blandit dui non, posuere metus.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- end capaian dan tujuan -->
       <div class="footer">
         <p>Copyright © 2024 M. Yusril Abidin. All rights reserved.</p>
       </div>
     </div>
-      
+
     <script src="script.js"></script>
   </body>
 </html>
