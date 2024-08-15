@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style2.css?v=3" />
+    <link rel="stylesheet" href="style.css" />
     
   </head>
     <div id="container">
@@ -26,7 +26,10 @@
           <div class="description">
             TERRARIA merupakan media pembelajaran virtual field trip yang ditujukan untuk menunjang pembelajaran terkait pemanfaatan dan pelestarian sumber daya alam yang dapat memberikan konten yang bersifat kontekstual, sehingga mampu meningkatkan motivasi belajar siswa. Selain itu melalui media ini tentunya dapat memberikan inovasi dalam pembelajaran IPS yang menarik dan interaktif.
           </div>
-          <a class="btn" href="/tour/bromo/">View Travel</a>
+          <div class="butnav">
+            <a class="btn" href="/tour/bromo/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg> View Travel</a>
+            <button class="btn petunjuk" onclick="showPetunjuk()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg> Petunjuk</button>
+          </div>
         </div>
         <div class="rinfo owl-carousel owl-theme">
           <div class="items">
@@ -37,7 +40,116 @@
           </div>
         </div>
       </div>
+      <div id="petunjuk">
+        <div class="header">
+          <h3 class="judul">Petunjuk</h3>
+          <button class="close" onclick="closePetunjuk()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l2.9 2.9q.275.275.7.275t.7-.275t.275-.7t-.275-.7L13.4 12l2.9-2.9q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275L12 10.6L9.1 7.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l2.9 2.9l-2.9 2.9q-.275.275-.275.7t.275.7t.7.275t.7-.275zm0 8.6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg></button>
+        </div>
+      
+        <div id="guides">
+          <div class="guide">
+            <div class="ginfo">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"
+                />
+              </svg>
+              <div class="desc">
+                Icon next dalam media berfungsi untuk melanjutkan ke stopsite
+                selanjutnya
+              </div>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="ginfo">
+              <svg
+                style="transform: scaleX(-1)"
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m3.935-16.408a.75.75 0 0 1 .467.694v2.715a.75.75 0 0 1-.75.75H13a.75.75 0 0 1-.537-1.274l.762-.78a4.17 4.17 0 0 0-4.224 1.089c-1.668 1.707-1.668 4.483 0 6.19a4.169 4.169 0 0 0 5.998 0a4.394 4.394 0 0 0 1.208-2.472c.058-.418.39-.77.812-.77c.406 0 .742.325.703.729a5.897 5.897 0 0 1-1.65 3.562a5.669 5.669 0 0 1-8.144 0c-2.237-2.29-2.237-5.997 0-8.287a5.666 5.666 0 0 1 6.437-1.208l.75-.768a.75.75 0 0 1 .82-.17"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div class="desc">
+                Tombol restart berfungsi untuk memulai kembali media dari stopsite awal
+              </div>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="ginfo">
+              <svg
+                class="icon rounded"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M13.25 12.5L12.1 11q-.15-.175-.4-.175t-.4.175l-1.675 2.2q-.2.25-.063.525t.463.275h7.95q.325 0 .462-.275t-.062-.525l-2.425-3.175q-.15-.2-.4-.2t-.4.2l-1.9 2.475ZM8 18q-.825 0-1.413-.588T6 16V4q0-.825.588-1.413T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.588 1.413T20 18H8Zm0-2h12V4H8v12Zm-4 6q-.825 0-1.413-.588T2 20V7q0-.425.288-.713T3 6q.425 0 .713.288T4 7v13h13q.425 0 .713.288T18 21q0 .425-.288.713T17 22H4ZM8 4v12V4Z"
+                />
+              </svg>
+
+              <div class="desc">Tombol Galeri dapat diguakan untuk melihat kenampakan panorama secara detail</div>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="ginfo">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m9.5 16.5l7-4.5l-7-4.5zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                />
+              </svg>
+              <div class="desc">Tombol Play merupakan dapat digunakan untuk memutar video yang terdapat didalam media pembelajaran</div>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="ginfo">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12m14.03-2.47a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L13.56 12zm-4-1.06a.75.75 0 0 1 0 1.06L9.56 12l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3-3a.75.75 0 0 1 0-1.06l3-3a.75.75 0 0 1 1.06 0"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div class="desc">Tombol Back merupakan tombol yang dapat digunakan apabila ingin kembali tampilan media sebelumnya</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright © 2024 M. Yusril Abidin. All rights reserved.</p>
+      </div>
     </div>
-    <script src="script2.js"></script>
+      
+    <script src="script.js"></script>
   </body>
 </html>
