@@ -330,15 +330,16 @@ ol li::before {
   position: absolute;
   color: white;
   font-family: "Poppins", sans-serif;
-  bottom: 150px;
+  bottom: 10%;
   padding: 5% 10%;
+  max-width: 1280px;
 }
 
 .linfo {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 .rinfo {
   display: none;
@@ -396,7 +397,7 @@ ol li::before {
   margin: 10px 0;
 }
 .linfo .btn:hover {
-  background-color: #007bff;
+  background-color: #007bff !important;
 }
 .linfo .btn svg {
   margin-right: 10px;
@@ -414,6 +415,8 @@ ol li::before {
   background: white;
   display: none;
   animation: fadeInSlideUp 0.5s ease-out forwards;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 #petunjuk.show,
 #candt.show {
@@ -425,7 +428,7 @@ ol li::before {
 .header .close {
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 0px;
   border: none;
   background: transparent;
 }
@@ -514,4 +517,7 @@ ol li::before {
   100% {
     opacity: 1;
   }
+}
+::-webkit-scrollbar {
+  width: 0px;
 }
